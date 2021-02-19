@@ -6,10 +6,11 @@ function user(){
     }
 
 /* 0*) Запомните имя пользователя и сохраните его после перезагрузки */
-function userSave(){
+function save(){
+
     if (localStorage.getItem('test') == null) {
-        let users = prompt("Введите своё имя: ");
-        localStorage.setItem('test', users);
+        let us = prompt("Введите своё имя: ");
+        localStorage.setItem('test', us);
         alert(localStorage.getItem('test'));
     } else {
         alert(localStorage.getItem('test'));
@@ -120,14 +121,14 @@ function Count() {
 document.getElementById("dat").innerHTML = data;
   }
 
-  function userSave(){
-if (localStorage.getItem('usname') == null) {
+  function Name(){
+if (localStorage.getItem('client') == null) {
     let users = prompt("Введите своё имя: ");
-    localStorage.setItem('usname', users);
-    document.getElementById("nam").innerHTML = localStorage.getItem('usname');
+    localStorage.setItem('client', users);
+    document.getElementById("nam").innerHTML = localStorage.getItem('client');
    
 } else {
-  document.getElementById("nam").innerHTML = localStorage.getItem('usname');
+  document.getElementById("nam").innerHTML = localStorage.getItem('client');
     }
 }
 
@@ -135,7 +136,7 @@ if (localStorage.getItem('usname') == null) {
 document.getElementById("main").style.display = "none";
 document.getElementById("click").style.display = "block";
 Datime();
-userSave();
+Name();
 
 }
 function FuncImg() {
