@@ -1,4 +1,4 @@
-console.log(localStorage.getItem('str'));
+
 /* 0) Попросите пользователя представиться и поприветствуйте его */
 function user(){
     let name = prompt("Введите своё имя: ");
@@ -7,6 +7,7 @@ function user(){
 
 /* 0*) Запомните имя пользователя и сохраните его после перезагрузки */
 function save(){
+    console.log(localStorage.getItem('str'));
     if (localStorage.getItem('str') == null) {
         let us = prompt("Введите своё имя: ");
         localStorage.setItem('str', us);
