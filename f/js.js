@@ -1,7 +1,4 @@
-localStorage.clear();
-
-
-
+console.log(localStorage.getItem('str'));
 /* 0) Попросите пользователя представиться и поприветствуйте его */
 function user(){
     let name = prompt("Введите своё имя: ");
