@@ -7,7 +7,7 @@ function user(){
 
 /* 0*) Запомните имя пользователя и сохраните его после перезагрузки */
 function save(){
-
+localStorage.removeItem('test');
     if (localStorage.getItem('test') == null) {
         let us = prompt("Введите своё имя: ");
         localStorage.setItem('test', us);
