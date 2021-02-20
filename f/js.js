@@ -50,8 +50,14 @@ function save(){
  function minMax(){
  
  var array=[]; // объявить массив
- for(var i = 0; i<5; i++) array.push(prompt("Введите массив из 5 элементов"));// записать значения в массив
- 
+ var numbers;
+ for(var i = 0; i<5; i++){
+    let number = prompt("Введите элемент массива: ");
+    while (number === '' || number.replace (/\d/g, '').length) { // когда i будет равно 0, условие станет ложным, и цикл остановится
+        number = prompt("Введите элемент массива (ЭЛЕМЕНТ - ЭТО ЧИСЛО!): ");
+    }
+    array.push(number);
+ }
 
  var max = array[0]; // берем первый элемент массива
  for (var i = 0; i < 5; i++) { // переберем весь массив
