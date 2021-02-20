@@ -7,13 +7,12 @@ function user(){
 
 /* 0*) Запомните имя пользователя и сохраните его после перезагрузки */
 function save(){
-localStorage.removeItem('test');
-    if (localStorage.getItem('test') == null) {
+    if (localStorage.getItem('str') == null) {
         let us = prompt("Введите своё имя: ");
-        localStorage.setItem('test', us);
-        alert(localStorage.getItem('test'));
+        localStorage.setItem('str', us);
+        alert(localStorage.getItem('str'));
     } else {
-        alert(localStorage.getItem('test'));
+        alert(localStorage.getItem('str'));
         }
 }
 
