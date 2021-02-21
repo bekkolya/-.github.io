@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Course</title>
+
+    <link rel="stylesheet" href="JavaScript.css">
+</head>
+<div class="">
+<body id="body" class="default">
+    <script src="js.js"></script>
+    <div class="body2" id = "click" onclick = "FuncImg()">
+        <h3>Задание №6</h3>
+        <p>У блока с картинкой, датой и именем установлено свойство display: none. У блока по которому мы будем нажимать display: block. При нажатии срабатывает событие. И два блока "меняются свойствами". После еще одного нажатия-все вернется обратно.
+        </p>
+        <div class="c" id="dat"></div>
+        <div class="f" id="nam"></div>
+    </div>
+
+    
+<div id="main">
+
+
+
+ <div class="header">
+        <div class="logo">
+            <p>
+            <h1>JAVA SCRIPT</h1>
+            </p>
+        </div>
+
+
+        <div class="topnav" id="myTopnav">
+            <div class="nav_item"><a class="abc" href="#win1">0</a></div>
+            <div class="nav_item"><a class="abc" href="#win2">0*</a></div>
+            <div class="nav_item"><a class="abc" href="#win3">1</a></div>
+            <div class="nav_item"><a class="abc" href="#win4">2</a></div>
+            <div class="nav_item"><a class="abc" href="#win5">3</a></div>
+            <div class="nav_item"><a class="abc" href="#win6">4</a></div>
+            <div class="nav_item"><a class="abc" href="#win7">5</a></div>
+       <!-- <div class="nav_item"><a class="abc" href="#win8">5*</a></div>      -->
+            <div class="nav_item"><a class="abc" onclick="FuncImages()">6</a></div>
+       <!-- <div class="nav_item"><a class="abc" href="#win10">6*</a></div>     -->
+        </div>
+    </div>
+
+
+    
+
+
+  <!--
+    <a href="#x" class="overlay" id="win9"></a>
+    <div class="popup">
+        <p>
+        <h3>Задание №6</h3>
+        
+        Картинка, дата и имя.
+        </p>
+        
+        
+        <p>
+        
+        <button id = "main" onclick="FuncImages()">ЗАПУСТИТЬ ФУНКЦИЮ</button>
+        <div class="bckgclr" id = "click" onclick = "FuncImg()">
+            
+            <div class="c" id="dat"></div>
+            <div class="f" id="nam"></div>
+        
+        
+        </div>
+        <p>У блока с картинкой, датой и именем установлено свойство display: none. У блока по которому мы будем нажимать display: block. При нажатии срабатывает событие. И два блока "меняются свойствами". После еще одного нажатия-все вернется обратно.
+        </p>
+       </p>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+ -->
+
+
+
+    <a href="#x" class="overlay" id="win1"></a>
+    <div class="popup">
+        <p>
+        <h3>Задание №0</h3>
+        <br>
+        Попросите пользователя представиться и поприветствуйте его.
+        </p>
+        <p>В решении данного задания нам нужно использовать два метода: promt() и alert(). Через promt() вводим и
+            запоминаем имя, а через alert() выводим на экран.</p>
+        <p>
+            <button onclick="user()">ЗАПУСТИТЬ ФУНКЦИЮ</button>
+       </p>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+
+
+
+
+    <a href="#x" class="overlay" id="win2"></a>
+    <div class="popup">
+        <p>
+        <h3>Задание №0*</h3>
+        <br>
+        Запомните имя пользователя и сохраните его после перезагрузки.
+        </p>
+        <p>Записываем в переменную значение, полученное из метода promt(). Записываем значение в локальное хранилище и получаем его через метод alert().
+        </p>
+        <p>
+            <button onclick="save()">ЗАПУСТИТЬ ФУНКЦИЮ</button>
+       </p>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+
+
+
+    <a href="#x" class="overlay" id="win3"></a>
+    <div class="popup">
+        <p>
+        <h3>Задание №1</h3>
+        <br>
+        Попросите пользователя ввести основание и высоту треугольника, посчитайте и верните
+         площадь треульгольника заданными параметрами.
+        </p>
+        <p>Записываем в переменную значение основания и высоты, полученные из метода promt(). По формуле площади треугольника считаем площадь и выводим через метод alert().
+        </p>
+        <p>
+            <button onclick="areaTriangle()">ЗАПУСТИТЬ ФУНКЦИЮ</button>
+       </p>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+
+
+
+    <a href="#x" class="overlay" id="win4"></a>
+    <div class="popup">
+        <p>
+        <h3>Задание №2</h3>
+        <br>
+        Попросите пользователя ввести 2 строки, сравните количество символов, если количество совпало, выдайте true, если нет - false.
+        </p>
+        <p>Через метод promt() вводим две строки. С помощью свойства .length, в условном операторе проверяем, равны ли длины строк. Если да, то с помощью метода alert() выводим True, иначе False.
+        </p>
+        <p>
+            <button onclick="compareString()">ЗАПУСТИТЬ ФУНКЦИЮ</button>
+       </p>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+    
+
+
+    <a href="#x" class="overlay" id="win5"></a>
+    <div class="popup">
+        <p>
+        <h3>Задание №3</h3>
+        <br>
+        Попросите пользователя ввести массив из 5 элементов. Выдайте ему минимульное и максимальное значение массива.
+        </p>
+        <p>Объявляем массив. Записываем значения из метода promt() в массив. Берём первый элемент массива. Затем перебираем весь массив. Если элемент больше, чем в переменной, то присваиваем его значение переменной и возвращаем максимальное значение с помощью метода alert(). Аналогично, с минимальным значением.
+        </p>
+        <p>
+            <button onclick="minMax()">ЗАПУСТИТЬ ФУНКЦИЮ</button>
+       </p>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+
+
+    <a href="#x" class="overlay" id="win6"></a>
+    <div class="popup">
+        <p>
+        <h3>Задание №4</h3>
+        <br>
+        Создайте таймер для пользователя. Функции таймера: начать отсчёт, остановить отсчёт, посмотреть сколько времени прошло меду стартом и финишем.
+        </p>
+        <p>Вводим 3 переменные. Секунды, включатель/выключатель таймера, интервал времени, с которым сменяются секунды. Есть три функции: включить остановить, начать сначала. Результат возвращаем с помощью метода document.getElementById() в поле input.
+        </p>
+        <p><input type="text" id="txt">
+            <button onclick="timer.run()">Включить таймер</button>
+            <button onclick="timer.stop()">Выключить таймер</button>
+            <button onclick="timer.start_over()">Начать сначала</button></p>
+        <p>
+            <button onclick="timer()">ЗАПУСТИТЬ ФУНКЦИЮ</button>
+       </p>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+
+
+
+
+    <a href="#x" class="overlay" id="win7"></a>
+    <div class="popupq">
+        <p>
+        <h3>Задание №5</h3>
+        <br>
+        Создайте тест из 10 вопросов по JS для пользователя. После прохождения пользователь видит свой результат.
+        </p>
+        <p>
+            <div class="question">
+                <p>1) Для чего нужен оператор %?</p>
+                <label><input type="radio" name="q1" value="0"> Это оператор конкатенации.</label><br/>
+                <label><input type="radio" name="q1" value="0"> Это оператор декремента.</label><br/>
+                <label><input type="radio" name="q1" value="1"> Этот оператор возвращает остаток от деления.</label><br/>
+                <label><input type="radio" name="q1" value="0"> Этот оператор возвращает результат целочисленного деления.</label><br/>
+              </div>
+              
+              <div class="question">
+                <p> 2) Как объявить функцию?</p>
+                <label><input type="radio" name="q2" value="0"> func bar(){}.</label><br/>
+                <label><input type="radio" name="q2" value="0"> Правильных ответов нет.</label><br/>
+                <label><input type="radio" name="q2" value="1"> function bar(){}.</label><br/>
+                <label><input type="radio" name="q2" value="0"> new function bar(){}.</label><br/>
+              </div>
+              
+              <div class="question">
+                <p> 3) Для чего используется функция promt? </p>
+                <label><input type="radio" name="q3" value="0"> Функция отображает диалоговое окно для ввода пользователем значения из заданного списка. </label><br/>
+                <label><input type="radio" name="q3" value="1"> Функция отображает диалоговое окно для ввода пользователем произвольного значения.</label><br/>
+                <label><input type="radio" name="q3" value="0"> Чтобы показать пользователю информационное сообщение с произвольным заголовком.</label><br/>
+                <label><input type="radio" name="q3" value="0"> Правильных ответов нет.</label><br/>
+              </div>
+
+              <div class="question">
+                <p> 4) Как узнать длину массива? </p>
+                <label><input type="radio" name="q4" value="0">arr.getLength </label><br/>
+                <label><input type="radio" name="q4" value="0">Нет правильных ответов </label><br/>
+                <label><input type="radio" name="q4" value="0"> length(arr)</label><br/>
+                <label><input type="radio" name="q4" value="1"> arr.length </label><br/>
+              </div>
+
+              <div class="question">
+                <p> 5) Как создать многомерный массива? </p>
+                <label><input type="radio" name="q5" value="0">Нет правильных вариантов </label><br/>
+                <label><input type="radio" name="q5" value="1">var matrix = [ [1,2,3], [4,5,6], [7,8,9] ] </label><br/>
+                <label><input type="radio" name="q5" value="0">var matrix = new MultiArr ( [1,2,3], [4,5,6], [7,8,9] ) </label><br/>
+                <label><input type="radio" name="q5" value="0">var matrix = new Multi( [1,2,3], [4,5,6], [7,8,9] ) </label><br/>
+              </div>
+
+              <div class="question">
+                <p> 6) Как добавить элементы в массив var array=["One", "Two"]? </p>
+                <label><input type="radio" name="q6" value="0"> array.add("Three", "Four") </label><br/>
+                <label><input type="radio" name="q6" value="0"> array["three", "four"]</label><br/>
+                <label><input type="radio" name="q6" value="1"> array.push("three", "four")</label><br/>
+                <label><input type="radio" name="q6" value="0">Нет правильных вариантов </label><br/>
+              </div>
+
+              <div class="question">
+                <p> 7) В каком из вариантов приведен правильный синтаксис тернарного оператора ("вопросительный знак")? </p>
+                <label><input type="radio" name="q7" value="0">условное выражение :  выражение1 ?  выражение2 </label><br/>
+                <label><input type="radio" name="q7" value="1">условное выражение ?  выражение1 ,  выражение2 </label><br/>
+                <label><input type="radio" name="q7" value="0"> if условное выражение ?  выражение1 :  выражение2</label><br/>
+                <label><input type="radio" name="q7" value="0">  Ни один из вариантов не является правильным</label><br/>
+              </div>
+
+              <div class="question">
+                <p> 8) Чему будет равен результат выражения 7++? </p>
+                <label><input type="radio" name="q8" value="0"> 7</label><br/>
+                <label><input type="radio" name="q8" value="0"> 8</label><br/>
+                <label><input type="radio" name="q8" value="0"> 9</label><br/>
+                <label><input type="radio" name="q8" value="1">  Будет ошибка, т.к. этот оператор применим только к переменным</label><br/>
+              </div>
+
+              <div class="question">
+                <p> 9) Как соединить две строки a, b? </p>
+                <label><input type="radio" name="q9" value="0"> Нет правильных вариантов</label><br/>
+                <label><input type="radio" name="q9" value="0">$a . $b </label><br/>
+                <label><input type="radio" name="q9" value="0"> a . b</label><br/>
+                <label><input type="radio" name="q9" value="1"> a + b</label><br/>
+              </div>
+
+              <div class="question">
+                <p> 10) Для чего используется конструкция switch? </p>
+                <label><input type="radio" name="q10" value="1">Для сравнения произвольного выражения с различными значениями </label><br/>
+                <label><input type="radio" name="q10" value="0"> Для сравнения любой переменной с различными значениями</label><br/>
+                <label><input type="radio" name="q10" value="0"> Для сравнения числа с различными значениями</label><br/>
+                <label><input type="radio" name="q10" value="0">  Нет верного ответа</label><br/>
+              </div>
+
+              <br/>
+              <button onClick="check_answers();">Узнать Результат</button>
+             
+              <div id="score"></div>
+        
+    
+            
+
+      
+    
+        </p>
+        
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+
+   
+
+
+    <div class="program">
+        <div class="program_content">
+            <div class="program_top">
+                <p>Как проходит обучение?</p>
+            </div>
+
+            <div class="program_content_items">
+
+                <div class="program_item_one">
+                    <div class="program_one_picture">
+                        <p><img class="one_picture" src="ч.png" alt="Человек за компьютером"></p>
+                    </div>
+
+                    <div class="program_one_picture_inscription">
+                        <p>Бесплатный онлайн-курс<br>для начинающих<br>web-разработчиков</p>
+                    </div>
+                </div>
+
+
+
+                <div class="program_item_two">
+                    <div class="program_two_picture">
+                        <p><img class="two_picture" src="ж.png" alt="Компьютер"></p>
+                    </div>
+
+
+                    <div class="program_two_picture_inscription">
+                        <p>Демонстрация кода<br>на каждое задание</p>
+                    </div>
+                </div>
+
+
+
+                <div class="program_item_three">
+                    <div class="program_three_picture">
+                        <p><img class="three_picture" src="м.png" alt="Мозг"></p>
+                    </div>
+
+                    <div class="program_three_picture_inscription">
+                        <p>Развитие навыков <br>программирования</p>
+                    </div>
+                </div>
+
+
+
+                <div class="programe_item_four">
+                    <div class="program_four_picture">
+                        <p><img class="four_picture" src="к.png" alt="Книга"></p>
+                    </div>
+
+                    <div class="program_four_picture_inscription">
+                        <p>Подробное пособие для<br>самостоятельного изучения</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="language">
+
+        <div class="language_content">
+            <div class="language_top">
+                <p>JavaScript. Что это такое и с чем его едят?</p>
+            </div>
+
+            <div class="lanquage_content_items">
+
+                <div class="language_item_left">
+                    <div class="language_left_text">
+                        <p>JavaScript — это язык программирования, который даёт возможность
+                            реализовывать сложное поведение веб-страницы. Каждый раз, когда вы видите веб-страницу,
+                            она не только отображает статическое содержимое, но и делает большее - своевременно
+                            отображает обновление контента,
+                            выводит интерактивные карты, 2D/3D анимацию, прокручивает видео и т.д. - будьте уверены,
+                            здесь не обошлось без JavaScript.</p>
+                    </div>
+
+                </div>
+
+                <div class="language_item_right">
+                    <div class="language_right_picture">
+                        <p><img class="right_picture" src="image.jpg" alt="JavaScript"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="application">
+        <div class="application_content">
+            <div class="application_top">
+                <p>Зачем нужен JavaScript?</p>
+            </div>
+
+            <div class="application_content_items">
+
+                <div class="application_item_left">
+                    <div class="application_left_picture">
+                        <p><img class="left_picture" src="Программный код.jpg" alt="JavaScript"></p>
+                    </div>
+                </div>
+
+
+                <div class="application_item_right">
+                    <div class="application_right_text">
+                        <div class="application_text_top">
+                            <p>Привет! Решили изучить JavaScript? Отличный выбор!<br>
+                                Язык программирования JavaScript придумали специально для того, чтобы создавать
+                                интерактивные сайты.<br>
+                                Такие сайты реагируют на ваши действия: добавляют лайк, когда вы нажимаете на
+                                «сердечко»; загружают новые посты в ленту, когда вы
+                                доходите до конца страницы; показывают оповещения о новом сообщении или письме. Для
+                                этого и нужен JavaScript. Сегодня это один из самых
+                                популярных и востребованных языков программирования, поэтому он пригодится каждому
+                                веб-разработчику.</p>
+
+                        </div>
+                        <div class="application_text_bottom">
+                            Код на языке JavaScript называют скриптом. Его сохраняют в отдельный файл с расширением js,
+                            а чтобы запустить, подключают этот файл на страницу. В HTML для добавления JavaScript есть
+                            специальный тег:<br>
+                            &#60;script src="адрес_файла"&#62;&#60;/script&#62;<br>
+                            Скрипт обычно подключают в самом конце страницы, перед закрывающим тегом &#60;/body&#62;.
+                            <div class="example">
+                                Например:<br>
+                                &#60;body&#62;<br>
+                                &#60;--Содержимое страницы--&#62;<br>
+
+                                &#60;script src="app.js"&#62;&#60;/script&#62;<br>
+                                &#60;/body&#62;<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="usage">
+        <div class="usage_content">
+            <div class="usage_top">
+                <p>Для чего хорош JavaScript?</p>
+            </div>
+
+            <div class="usage_content_items">
+
+
+                <div class="usage_item_right">
+
+                    <div class="usage_text_top">
+                        <p>Самое известное применение JavaScript — это, конечно же, веб-разработка. </p>
+                        <p> JavaScript отличается:<br>
+                            &#10003; &nbsp;прототипным стилем программирования (вместо классов и наследования —
+                            прототипы и клонирование);<br>
+                            &#10003; &nbsp;слабой динамической типизацией;<br>
+                            &#10003; &nbsp;функциями как объектами первого класса (то есть их можно создавать прямо во
+                            время выполнения программ).<br></p>
+
+                    </div>
+                    <div class="usage_text_bottom">
+                        <p>Итак, в каких областях нашёл себя JavaScript.
+                        <p></p>
+
+
+                        <p>&#128161;Динамические веб-страницы<br>
+                            Всплывающие подсказки, движущиеся картинки, падающие снежинки и прочие анимашки — за всем
+                            этим можно идти к JS.
+                            JS-код встроен в веб-страницу, и когда пользователь открывает её, скрипт выполняется прямо в
+                            браузере.
+
+                            Без JavaScript почти невозможно создать полноценный сайт. Добавьте к JS знания HTML, CSS, и
+                            вы получите неплохой набор навыков начинающего фронтенд-разработчика.
+                        </p>
+
+
+                        <p>&#128161;Веб-приложения и игры<br>
+                            JavaScript пригодится и здесь. Для примера, Google Maps и веб-клиент Gmail используют
+                            JavaScript. А если вы хотите написать игру — возьмите JS, HTML5 и создайте свою браузерную
+                            бродилку.</p>
+
+                        <p>&#128161;Расширения для браузера<br>
+                            Раз JavaScript выполняет код в браузере, это отличный выбор для создания браузерных
+                            расширений.
+                            Напишите свой чекер почты или, например, счётчик активности, который будет отслеживать,
+                            сколько времени вы провели за работой, а сколько за просмотром соцсетей.
+                        </p>
+
+                        <p>&#128161;Серверные приложения<br>
+                            Да, на JavaScript спокойно можно написать веб-сервер. Но если в браузере у JS практически
+                            нет конкурентов, то в мире бэкенда ему приходится соревноваться с другими языками: PHP,
+                            Python и прочими. Главное преимущество JavaScript в этой битве — возможность разрабатывать
+                            клиентскую и серверную часть на одном и том же языке. Чтобы писать бэкенд на JavaScript,
+                            обычно используется движок Node.js — он позволяет выполнять JS-код вне браузера.
+                        </p>
+
+                        <p>&#128161;Мобильные приложения<br>
+                            Возможно, не самое популярное, но вполне реальное применение JavaScript. JavaScript хорош
+                            тем, что позволяет создавать кроссплатформенные приложения — для этого можно использовать
+                            фреймворки React Native, Ionic или PhoneGap.
+                        </p>
+
+
+
+
+                        <p>&#128161;Десктоп<br>
+                            JavaScript добрался и до настольных приложений. Так, GitHub соединил упомянутый выше
+                            Node.js, движок рендеринга Chromium и разработал фреймворк Electron,
+                            на котором можно писать кроссплатформенные десктопные проекты. Среди примеров — GitHub
+                            Desktop, Visual Studio Code, Skype, WordPress Desktop.
+                            У Electron есть аналог — NW.js, который в основном используется для создания настольных
+                            версий сайтов и игр.</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="bye">
+        <div class="bye_content">
+            <div class="bye_top">
+                <p>Удачи в изучении JavaScript!</p>
+            </div>
+            <div class="bye_item">
+                <div class="bye_picture">
+                    <p><img class="picture" src="JS картинка.jpg" alt="JavaScript"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
